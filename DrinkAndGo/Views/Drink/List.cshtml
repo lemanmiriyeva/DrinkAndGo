@@ -1,0 +1,15 @@
+﻿@model DrinkListViewModel
+
+<div>
+    <h2>
+        All drinks are shown here
+    </h2>
+</div>
+<div class="row">
+    @foreach (var drink in Model.Drinks)
+    {
+        @await Html.PartialAsync("_DrinkSummary",drink)
+    }
+</div>
+    
+

@@ -1,0 +1,12 @@
+﻿@model DrinkAndGo.DataAccess.Entity.Drink
+
+<div class="col-sm-4 col-lg-4 col-md-4">
+    <div class="card mb-3">
+        <img style="width: 21.6rem;height:14rem" class="card-img-top" src="@Model.ImageThumbnailUrl" alt="@Model.ShortDescription" />
+        <div class="card-body">
+            <h3 class="float-right">@Model.Price.ToString("C")</h3>
+            <h5 class="card-title">@Model.Name</h5>
+            <p class="card-text">@Model.ShortDescription</p>
+        </div>
+    </div>
+</div>
